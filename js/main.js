@@ -159,4 +159,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     skillBars.forEach(bar => skillObserver.observe(bar));
   }
+
+  // 10. Light / Dark Mode Toggle
+  const themeToggle = document.getElementById('themeToggle');
+
+  // Apply saved preference on load
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-mode');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isLight = document.body.classList.toggle('light-mode');
+
+      // Persist preference
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+  }
 });

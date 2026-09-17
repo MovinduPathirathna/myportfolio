@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Researches | Movindu Pathirathna</title>
-    
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="nav-logo">
-                M<span class="logo-accent">.</span>Pathirathna
+                Movindu Pathirathna
             </a>
-            
+
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="qualifications.html" class="nav-link">Qualifications</a>
@@ -24,10 +26,36 @@
                 <a href="researches.html" class="nav-link active">Researches</a>
             </div>
 
-            <div class="nav-hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-right-controls">
+                <!-- Day / Night Toggle Switch -->
+                <button id="themeToggle" class="theme-toggle-switch" aria-label="Toggle light/dark mode"
+                    title="Toggle light/dark mode">
+                    <span class="switch-track">
+                        <span class="sky-stars">
+                            <span class="star star-1"></span>
+                            <span class="star star-2"></span>
+                            <span class="star star-3"></span>
+                            <span class="star star-4"></span>
+                        </span>
+                        <span class="sky-clouds">
+                            <span class="cloud cloud-1"></span>
+                            <span class="cloud cloud-2"></span>
+                            <span class="cloud cloud-3"></span>
+                        </span>
+                        <span class="switch-thumb">
+                            <span class="moon-craters">
+                                <span class="crater crater-1"></span>
+                                <span class="crater crater-2"></span>
+                            </span>
+                        </span>
+                    </span>
+                </button>
+
+                <div class="nav-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -44,14 +72,15 @@
     <header class="page-header">
         <div class="container">
             <h1 class="hero-entrance">Ongoing & Past <span class="gradient-text">Researches</span></h1>
-            <p class="hero-entrance hero-entrance-delay-1">Exploring the frontiers of computer science, human-computer interaction, and machine learning.</p>
+            <p class="hero-entrance hero-entrance-delay-1">Exploring the frontiers of computer science, human-computer
+                interaction, and machine learning.</p>
         </div>
     </header>
 
     <!-- Researches Section -->
     <section class="section pt-0">
         <div class="container">
-            
+
             <div class="grid-2">
                 <!-- Research 1 -->
                 <div class="research-card reveal delay-1">
@@ -62,10 +91,13 @@
                     <h3>Federated Learning for Privacy-Preserving Health Diagnostics</h3>
                     <div class="field">Machine Learning • Healthcare IT</div>
                     <p>
-                        Investigating methods to train diagnostic ML models across multiple hospitals without sharing sensitive patient data centrally. We are currently implementing a prototype using PySyft and PyTorch.
+                        Investigating methods to train diagnostic ML models across multiple hospitals without sharing
+                        sensitive patient data centrally. We are currently implementing a prototype using PySyft and
+                        PyTorch.
                     </p>
                     <div class="research-collaborators">
-                        <span><strong>Collaborators:</strong> Medical Research Institute of Colombo, Dr. S. Perera</span>
+                        <span><strong>Collaborators:</strong> Medical Research Institute of Colombo, Dr. S.
+                            Perera</span>
                     </div>
                 </div>
 
@@ -78,7 +110,8 @@
                     <h3>Edge Computing Optimization for IoT Sensor Networks</h3>
                     <div class="field">Distributed Systems • Edge AI</div>
                     <p>
-                        Developed a dynamic resource allocation algorithm for IoT edge nodes that improved battery life by 25% while maintaining low latency for critical anomaly detection tasks.
+                        Developed a dynamic resource allocation algorithm for IoT edge nodes that improved battery life
+                        by 25% while maintaining low latency for critical anomaly detection tasks.
                     </p>
                     <div class="research-collaborators">
                         <span><strong>Funding:</strong> National Science Foundation Grant #12345</span>
@@ -97,7 +130,9 @@
                     <h3>Accessible Data Visualization for the Visually Impaired</h3>
                     <div class="field">Human-Computer Interaction (HCI)</div>
                     <p>
-                        My final year undergraduate project. Created a web-based tool that automatically converts complex charts (bar, line, pie) into interactive audio-tactile representations using the Web Audio API and standard screen reader patterns.
+                        My final year undergraduate project. Created a web-based tool that automatically converts
+                        complex charts (bar, line, pie) into interactive audio-tactile representations using the Web
+                        Audio API and standard screen reader patterns.
                     </p>
                     <div class="research-collaborators">
                         <span><strong>Award:</strong> Best Undergraduate Research Project 2022</span>
@@ -119,4 +154,5 @@
     <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
