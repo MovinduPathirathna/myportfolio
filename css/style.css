@@ -59,7 +59,7 @@
 
   /* Spacing */
   --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
+  --space-sm: 0.6rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
   --space-xl: 2rem;
@@ -346,8 +346,9 @@ body.light-mode .navbar.scrolled {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding-left: var(--space-sm);
-  /* Push logo closer to left edge */
+  max-width: 100%;
+  padding-left: var(--space-xl);
+  padding-right: var(--space-xl);
 }
 
 .nav-logo {
@@ -358,6 +359,7 @@ body.light-mode .navbar.scrolled {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  white-space: nowrap;
 }
 
 .nav-logo .logo-accent {
